@@ -28,7 +28,8 @@ def magic_drawer(coin_array):
 
 
 if __name__ == '__main__':
-    print("Type a list of positive or negative integers to be used as amount of coins, separated by spaces:")
+    print("Type a list of positive or negative integers that will represent the number " + 
+          "of coins added/subtracted to the drawer, separated by spaces:")
     coin_array = input()
 
     try:
