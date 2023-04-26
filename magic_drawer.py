@@ -28,4 +28,13 @@ def magic_drawer(coin_array):
 
 
 if __name__ == '__main__':
-    print(magic_drawer([1, -1, 2, 0, 4]))
+    print("Type a list of positive or negative integers to be used as amount of coins, separated by spaces:")
+    coin_array = input()
+
+    try:
+        coin_array = [int(value) for value in coin_array.split()]
+        print(magic_drawer(coin_array))
+    except Exception as e:
+        print(f"Invalid input, error: {e}")
+
+    
